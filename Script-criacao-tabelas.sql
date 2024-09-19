@@ -56,6 +56,7 @@ CREATE TABLE Movimentacao_Compra (
     id_usuario INTEGER NOT NULL,
     id_produto INTEGER NOT NULL,
     quantidade_produto INTEGER NOT NULL,
+    valor_unitario NUMERIC NOT NULL,
     FOREIGN KEY (id_pessoa_fisica) REFERENCES pessoa_fisica(pessoa_id),
     FOREIGN KEY (id_usuario) REFERENCES usuario(id),
     FOREIGN KEY (id_produto) REFERENCES produto(id)
